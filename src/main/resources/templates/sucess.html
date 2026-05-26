@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            background: linear-gradient(135deg, #0f172a, #1e293b, #064e3b);
+        }
+
+        /* SUCCESS CARD */
+        .card{
+            width:380px;
+            padding:40px;
+            text-align:center;
+
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(15px);
+            border:1px solid rgba(255,255,255,0.2);
+
+            border-radius:20px;
+            box-shadow:0 15px 40px rgba(0,0,0,0.5);
+
+            animation: pop 0.5s ease-in-out;
+        }
+
+        @keyframes pop{
+            from{
+                transform: scale(0.7);
+                opacity:0;
+            }
+            to{
+                transform: scale(1);
+                opacity:1;
+            }
+        }
+
+        /* CHECK ICON */
+        .check{
+            width:70px;
+            height:70px;
+            margin:auto;
+            border-radius:50%;
+
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+
+            font-size:35px;
+            color:white;
+
+            box-shadow:0 0 20px rgba(34,197,94,0.6);
+            margin-bottom:20px;
+        }
+
+        h1{
+            color:white;
+            font-size:22px;
+            margin-bottom:10px;
+        }
+
+        p{
+            color:rgba(255,255,255,0.7);
+            margin-bottom:25px;
+        }
+
+        button{
+            width:100%;
+            padding:12px;
+            border:none;
+            border-radius:12px;
+
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color:white;
+            font-size:16px;
+
+            cursor:pointer;
+            transition:0.3s;
+        }
+
+        button:hover{
+            transform: scale(1.05);
+            box-shadow:0 10px 25px rgba(139,92,246,0.4);
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="check">✔</div>
+
+    <h1>Student Saved Successfully!</h1>
+    <p>Your data has been stored in database</p>
+
+    <a href="/open">
+        <button>Go to Home</button>
+    </a>
+
+</div>
+
+</body>
+</html>
